@@ -19,5 +19,17 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      'no-unused-vars': [
+        "warn",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": true,
+          "caughtErrors": "none"
+        }
+      ]
+  }
   },
+
 ])
